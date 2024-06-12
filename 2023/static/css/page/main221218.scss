@@ -1,0 +1,30 @@
+.l_main {
+    .section {
+        width: 100%;
+        padding: 100px;
+        &:first-of-type {
+            background-color: antiquewhite;
+        }
+        &:nth-of-type(2) {
+            background-color: burlywood;
+        }
+        &:nth-of-type(3) {
+            background-color: darkkhaki;
+        }
+        &:last-of-type {
+            background-color: tan;
+        }
+        > div {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li {
+                    + li {
+                        margin-top: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

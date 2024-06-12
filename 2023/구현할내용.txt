@@ -1,0 +1,82 @@
+**appsray - 어니컴
+
+ - 스크롤매직 > function (221218 체크)
+ - tab (221220 체크)
+
+**everygood - 트루델
+
+ - product hover 시 왼쪽에 똑같은 사진 보이기 
+
+
+**이스트힐 
+
+ - swiper 화면에 따라 bar 색상 다르게
+ - 모바일 product 클릭시 그쪽 방향으로 scroll링
+
+**옵티시스
+
+ - 메인 하단 blog > 크롭 이미지 보고 background position 
+ - 헤더 이미지 줄어들기 hover 시 알맞은 이미지 나오기
+
+**일리아스 
+
+ - swiper 화면에 따라 bar 색상 다르게 / scrollbar 구현하기
+ - click 시 swipe-slide 변화
+ - border 효과 확인해보기 (sempio)
+
+**srp - 티케이
+
+ - quick 어느정도까지 오면 멈추기
+ - 메인 페이지네이션 window height 에 맞춰서 내려오다가 메인 넘어가면 멈추기
+ - 온라인상담 select 클릭시 다른 input 박스에 들어오기
+
+**달라진
+
+ - quick/ 상담예약퀵버튼 어느정도까지 오면 멈추기
+ - scroll링~
+
+**인벤티지랩
+
+ - company 클릭시 이미지 변화
+ - scroll 시 연혁 
+ - 모바일  > 탭 영역
+
+**제노코
+
+ - 메인 탭 / 자동롤링
+ - 모바일 > 메인 탭 부분 css (.tab의 width를 자바스크립트로 해야할듯)
+
+**피코크
+
+ - 브랜드소개 background fixed
+ - 모바일 > 제품 탭 부분 css(.tab의 width 따로 구현안하고 다른방식으로 함 )
+ - 모바일 > 햄버거 버튼 애니메이션 ~
+
+**한솔
+
+ - 마키 메인 위에 돌아가는 애니메이션 메인에 width 늘어나는
+
+**폴수학
+
+ - hover시 마키
+ - 스크롤링이 다 되면 다음 active로 가기
+
+**김종학
+
+ - data-link로 효과 주기 //swiper 로 구현가능한지 transform rotate 로 사선도 가능한지
+ - works 부분 다시 한번 보기
+
+**옥시스
+
+ - main호버시 자동스크롤링 bg 바뀜
+ - 회사소개 svg 부분 확인하기
+
+/*공통부분*/
+
+header active / 페이지 진입 시 active
+
+및 푸르지오
+
+swiper-bullet 사용하는 부분 
+팝업 
+모바일 인테리어 클릭 더블클릭 링크이동

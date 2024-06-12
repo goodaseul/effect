@@ -1,0 +1,169 @@
+$black: #333;
+$white: #fff;
+$gray: lighten($black, 40%);
+$red: #ca9964;
+$beige: #d6ccad;
+$orange: #e06014;
+$blue: #5aaed6;
+
+@mixin box-sizing($props) {
+    -webkit-box-sizing: $props;
+    -moz-box-sizing: $props;
+    box-sizing: $props;
+}
+
+@mixin transform($props) {
+    -webkit-transform: $props;
+    -moz-transform: $props;
+    transform: $props;
+}
+
+@mixin transform-origin($props) {
+    -webkit-transform-origin: $props;
+    -moz-transform-origin: $props;
+    transform-origin: $props;
+}
+
+@mixin transition($props) {
+    -webkit-transition: $props;
+    -moz-transition: $props;
+    transition: $props;
+}
+
+@mixin animation($props) {
+    -webkit-animation: $props;
+    -moz-animation: $props;
+    animation: $props;
+}
+
+@mixin border-radius($props) {
+    border-radius: $props;
+}
+
+@mixin box-shadow($prop) {
+    box-shadow: $prop;
+}
+
+$colors: (darken(#ca9964, 15%), #ca9964, darken(#ddd, 25%), $black);
+
+@each $color in $colors {
+    $i: index($colors, $color);
+    .accordion-group li:nth-child(#{$i}) {
+        .accordion-overlay {
+            background: #{$color};
+            opacity: 0.8;
+        }
+        &.out {
+            .accordion-overlay {
+                background: #{$color};
+                opacity: 0;
+            }
+        }
+    }
+}
+
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+.accordion-group {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    @include transition(all 300ms ease);
+
+    & li {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        margin: 0;
+        padding: 1.6em;
+        list-style: none;
+        width: calc(100% / 4);
+        height: inherit;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include transition(all 250ms ease-in-out);
+
+        & h3 {
+            position: relative;
+            $white: blue !default;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            padding: 0;
+            font-weight: 300;
+            margin: 6.5rem 0 0;
+        }
+
+        & .accordion-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            @include transition(all 250ms ease-in-out);
+        }
+
+        & section {
+            display: flex;
+            align-items: center;
+            width: 75%;
+            height: 100%;
+
+            &.big-section {
+                width: 100%;
+            }
+
+            & article {
+                opacity: 0;
+            }
+        }
+
+        &.out {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .accordion-group {
+        height: 360px;
+        & li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.out {
+                & h3 {
+                    opacity: 0;
+                }
+            }
+            & h3 {
+                opacity: 1;
+                @include transition(all 300ms ease-in-out);
+                @include transform(rotate(90deg));
+                width: 2.5rem;
+                padding: 0;
+                margin: 10rem 0;
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

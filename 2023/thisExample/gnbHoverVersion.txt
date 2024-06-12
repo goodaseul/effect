@@ -1,0 +1,42 @@
+function gnbHover() {
+    const li = document.querySelectorAll("ul li");
+    if (window.innerWidth >= 1480) {
+        li.forEach((item, index) => {
+            item.addEventListener("mouseover", () => {
+                li.forEach((item) => {
+                    item.classList.remove("over");
+                });
+                li[index].classList.add("over");
+            });
+            item.addEventListener("mouseleave", () => {
+                item.classList.remove("over");
+            });
+        });
+    } else {
+        li.forEach((item, index) => {
+            item.addEventListener("mouseover", () => {
+                item.classList.remove("over");
+            });
+        });
+    }
+}
+
+
+
+/// jquery v
+function gnbHover() {
+    if (window.innerWidth >= 1480) {
+        $(".depth1_list .depth1 > div a").hover(
+            function () {
+                $(this).parent().parent().addClass("over");
+            },
+            function () {
+                $(this).parent().parent().removeClass("over");
+            }
+        );
+    } else {
+        $(".depth1_list .depth1 > div a").hover(function () {
+            $(this).parent().parent().removeClass("over");
+        });
+    }
+}

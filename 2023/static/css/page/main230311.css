@@ -1,0 +1,67 @@
+* {
+  font-family: "Rubik Iso", cursive !important;
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding-top: 300px;
+}
+
+.container .nav {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: #f9f9f9;
+  padding: 30px;
+}
+
+.container .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .nav ul li {
+  font-size: 30px;
+  margin: 0 50px;
+  color: #333;
+}
+
+.container .nav ul li a {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid;
+  border-color: #f9f9f9;
+}
+
+.container .nav ul li a.active {
+  border-color: red;
+}
+
+.container .section {
+  padding: 500px;
+  padding-top: 0;
+}
+
+.container .section p {
+  font-size: 25px;
+  color: #333;
+  line-height: 36px;
+}
+
+.container .section p.tit {
+  color: blueviolet;
+  font-size: 42px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}

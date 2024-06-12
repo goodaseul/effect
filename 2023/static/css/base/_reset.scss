@@ -1,0 +1,264 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+input,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  line-height: 1;
+  font-size: 20px;
+  color: #000;
+  overflow-x: auto !important;
+}
+
+main {
+  display: block;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+li {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-size: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+  // font-family: inherit;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+}
+
+input,
+select,
+textarea {
+  vertical-align: middle;
+  outline: 0;
+}
+button {
+  outline: 0;
+  cursor: pointer;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  display: block;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+.inner {
+  //   padding: 0 20px;
+  //   width: 1480px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 0;
+  box-shadow: none !important;
+  display: block;
+  text-align: center;
+}
+
+.icon {
+  display: block;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  resize: none;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+// $point: #e51f1f;
