@@ -1,7 +1,7 @@
 const horizontal = document.querySelector("#horizontal");
 const sections = gsap.utils.toArray("#horizontal > section");
 
-gsap.to(sections, {
+let scrollTween = gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
     ease: "none",
     scrollTrigger: {
@@ -9,13 +9,50 @@ gsap.to(sections, {
         start: "top top",
         end: () => "+=" + (horizontal.offsetWidth - innerWidth),
         pin: true,
-        scrub: 1,
-        snap: {
-            snapTo: 1 / (sections.length - 1),
-            inertia: false,
-            duration: { min: 0.1, max: 0.1 },
-        },
-        invalidateOnRefresh: true,
         anticipatePin: 1,
+        scrub: 1,
+        invalidateOnRefresh: true,
+    },
+});
+
+gsap.to(".img4", {
+    y: -200,
+    duration: 2,
+    ease: "elastic",
+    scrollTrigger: {
+        trigger: ".img4",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none reverse none",
+        markers: false,
+        id: "img4",
+    },
+});
+
+gsap.to(".img5", {
+    rotation: 720,
+    duration: 2,
+    ease: "elastic",
+    scrollTrigger: {
+        trigger: ".img5",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none reverse none",
+        markers: false,
+        id: "img5",
+    },
+});
+
+gsap.to(".img6", {
+    scale: 0.3,
+    duration: 2,
+    ease: "elastic",
+    scrollTrigger: {
+        trigger: ".img6",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none reverse none",
+        markers: false,
+        id: "img6",
     },
 });
